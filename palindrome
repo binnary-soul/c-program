@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+
+int main()
+{
+ int n,original,digit,reverse=0;
+ printf("enter an identification number:");
+ scanf("%d",&n);
+ 
+ if(n<0)
+ {
+ printf("invalid identification number");
+ return 0;
+ }
+  original=n;
+  
+  while(n>0)
+  
+  {
+      digit=n%10;
+      reverse=reverse*10+digit;
+      n=n/10;
+      
+  }
+  
+ if(original==reverse)
+  
+     printf("valid identification number:palindrome");
+else 
+    
+    printf("invalid identificationnumber:not a palindrome");
+    
+    
+    return 0;
+    
+}
+
+     
+
